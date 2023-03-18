@@ -36,7 +36,3 @@
 
 ;xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
 ;xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
-
-; Example
-(comment
-  (clojure.data.xml/emit-str (bpmn {})))

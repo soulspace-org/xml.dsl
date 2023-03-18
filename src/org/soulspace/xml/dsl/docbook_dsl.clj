@@ -75,7 +75,3 @@
 
 ; TODO add other root tags, if any
 (dsl/defroottags "db" "http://docbook.org/ns/docbook" ["article" "book" "set"])
-
-; Example
-(comment
-  (clojure.data.xml/emit-str (article {} (articleinfo {} (authorinitials {} "lso")))))

@@ -41,7 +41,3 @@
    "uplimit" "variance" "vector" "vectorproduct" "xor"])
 
 (dsl/defroottags "mathml" "http://www.w3.org/1998/Math/MathML" ["math"])
-
-; Example
-(comment
-  (clojure.data.xml/emit-str (mathml {} (mrow {} (apply {} (minus {}) (ci {} "a") (ci {} "b"))))))
