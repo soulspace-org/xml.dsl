@@ -13,11 +13,11 @@
 (ns org.soulspace.xml.dsl.builder
   "Contains macros to build a DSL for a XML dialact."
   (:require [clojure.data.xml :as xml]
-            [clojure.string :as str]
             [org.soulspace.clj.string :as sstr]))
 
-(defn- fn-name [tag]
+(defn- fn-name
   "Converts the 'tag' to a valid function name"
+  [tag]
   (sstr/to-kebab-case tag))
 
 ; TODO use optional named argument for attr map

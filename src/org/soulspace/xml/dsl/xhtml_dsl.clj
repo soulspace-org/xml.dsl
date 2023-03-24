@@ -26,5 +26,5 @@
 
 ; Example
 (comment
-;  (clojure.data.xml/emit-str (html {} (body {} (h1 {} "Hello World"))))
+  (clojure.data.xml/emit-str (html {} (body {} (h1 {} "Hello World"))))
   )

@@ -12,7 +12,8 @@
 
 (ns org.soulspace.xml.dsl.svg-dsl
   (:refer-clojure :exclude [filter set symbol use])
-  (:require [org.soulspace.xml.dsl.builder :as dsl]))
+  (:require [org.soulspace.xml.dsl.builder :as dsl]
+            [clojure.data.xml :as xml]))
 
 (dsl/deftags "svg" 
   ["a" "altGlyph" "altGlyphDef" "altGlyphItem" "animate" "animateColor" "animateMotion"
@@ -28,3 +29,11 @@
    "switch" "symbol" "text" "textPath" "title" "tref" "tspan" "use" "view" "vkern"])
 
 (dsl/defroottags "svg" "http://www.w3.org/2000/svg" ["svg"])
+
+:; Example 
+(comment
+  (clojure.data.xml/emit-str (svg
+                              {:width "400" :height "400"}
+                              (circle {:r "100" :cx "200" :cy "200" :style "stroke:black; stroke-width:5; fill:none"})
+                              (circle {:r "50" :cx "100" :cy "100" :style "stroke:black; fill:green"})))
+  )

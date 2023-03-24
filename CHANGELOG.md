@@ -1,9 +1,11 @@
 Change Log
 ==========
 
-Version 0.5.2
+Version 0.5.3
 -------------
-
+* docstring fix in builder
+* dependency update to clj.base 0.9.0
+* some refactoring and cleanups
 
 Version 0.5.2
 -------------
