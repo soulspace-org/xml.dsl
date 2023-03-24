@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+Version 0.5.4
+-------------
+* fixed typos
+
 Version 0.5.3
 -------------
 * docstring fix in builder
