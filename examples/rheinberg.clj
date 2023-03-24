@@ -11,7 +11,7 @@
 ;;;;
 
 (ns rheinberg
-  "Create Rheinberg and darkfield filters for microscopy.b"
+  "Create Rheinberg and darkfield filters for microscopy."
   (:require [org.soulspace.xml.dsl.svg-dsl :as svg]
             [clojure.data.xml :as xml]))
 
