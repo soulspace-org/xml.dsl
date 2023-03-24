@@ -30,7 +30,7 @@
 
 (dsl/defroottags "svg" "http://www.w3.org/2000/svg" ["svg"])
 
-:; Example 
+; Example 
 (comment
   (clojure.data.xml/emit-str (svg
                               {:width "400" :height "400"}
